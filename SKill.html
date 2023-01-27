@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .sidebar{
+        background-color: rgb(0, 0, 0);
+        display:flex;
+        height: 10vh;
+    }
+    .header{
+        height:80vh;
+    }
+    .main{
+        display:grid;
+        height:100%;
+        place-items:center;
+    }
+    /* .container{
+        display:flex;
+    } */
+    .sidebar nav{
+         width: 80vw; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .sidebar links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        
+    }
+    /* }
+    /* .sidebar nav ul {
+        display:flex;
+        
+    } */
+    .sidebar  ul li{
+        list-style-type: none;
+        display:flex;
+        padding: 10px;
+    }
+    
+   
+    
+    .button button {
+        font-size: 25px;
+        padding: 8px;
+        border-radius: 22px;
+        color:aliceblue;
+        background-color: rgba(5, 22, 100, 0.797);
+
+    }
+    .button button:hover {
+        color:rgb(17, 17, 10);
+        background-color: rgb(252, 255, 255);
+    }
+    .sidebar ul{
+        display: flex;
+        flex-direction: row;
+
+    }
+    .sidebar li a{
+        font-size: 20px;
+        padding:10px 0;
+        text-decoration: none;
+        color: aliceblue;
+    }
+    .sidebar li a:hover{
+        color: rgb(0, 125, 234);
+    }
+
+    .sidebar img{
+        width:25px;
+        border-radius: 20px;
+    }
+    .skillbar{
+        width:100%;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px rgba(5, 22, 100, 0.797);
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 700;
+    font-size: 25px;
+    }
+    .bar{
+        margin:26px 0;
+        margin-left:15px;
+    }
+    
+    .progress-linec span{
+        height:2%;
+        width:80%;
+        background: #6665ee;
+        position:absolute;
+        text-align: center;
+        border-radius: 20px;
+        z-index: 100;
+    }
+    .progress-linecss span{
+        height:2%;
+        width:50%;
+        background: #6665ee;
+        position:absolute;
+        text-align: center;
+        border-radius: 20px;
+    }
+    .progress-linecpp span{
+        height:2%;
+        width:70%;
+        background: #6665ee;
+        position:absolute;
+        border-radius: 20px;
+        text-align: center;
+        font: 10px;
+    }
+    .progress-linehtml span{
+        height:2%;
+        width:60%;
+        background: #6665ee;
+        position:absolute;
+        text-align: center;
+        border-radius: 20px;
+    }
+    .progress-linepython span{
+        height:2%;
+        width:40%;
+        background: #6665ee;
+        position:absolute;
+        text-align: center;
+        border-radius: 20px;
+    }
+    h1{
+        font-size: 10px;
+    }
+    </style>
+<body>
+    <div class="container">
+            <div class="sidebar">SD
+                <nav>
+                    <ul>
+                        <li><a href="/p.html">Home</a></li>
+                        <li><a href="/aboutus.html">About </a></li>
+                        <li><a href="/SKill.html">Skill</a></li>
+                        <!-- <li><a href="/education.html">Education</a></li> -->
+                        <li><a href="/contact.html">Contact</a></li>
+                        
+                    </ul>
+                </nav>
+                <links>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/shreyasidebnath/"target="_blank"><img src="LinkedIn_icon_circle.svg.png"></a></li>
+                        <li><a href="https://github.com/ShreyasiDebnath/"target="_blank"><img src="githublogo.png"> </a></li>
+                        <li><a href = "mailto:shreyasidebnath07@gmail.com"target="_blank"><img src="emaillogo.png"></a></li>
+                    </ul>
+                    </links>
+            
+        </div>
+        <div class="header">
+           <div class="main">
+               <div class="skillbar">
+                <div class="bar">
+                <div class="info">
+                    <span>HTML</span>
+                </div>
+                <div class="progress-linehtml"><span><h1>60%</h1></span></div>
+               </div> 
+               <div class="bar">
+                <div class="info">
+                    <span>CSS</span>
+                </div>
+                <div class="progress-linecss"><span><h1>50%</h1></span></div>
+               </div>
+               <div class="bar">
+                <div class="info">
+                    <span>Python</span>
+                </div>
+                <div class="progress-linepython"><span><h1>40%</h1></span></div>
+            </div>
+               <div class="bar">
+                <div class="info">
+                    <span>c</span>
+                </div>
+                <div class="progress-linec"><span><h1>80%</h1></span></div>
+            </div>
+               <div class="bar">
+                <div class="info">
+                    <span>c++</span>
+                </div>
+                <div class="progress-linecpp"><span><h1>70%</h1></span></div>
+            </div>
+               
+           </div>
+        </div>
+    </div>
+</body>
+</html>
